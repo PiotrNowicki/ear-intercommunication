@@ -8,23 +8,16 @@
 		<artifactId>ear-intercommunication</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
+
 	<artifactId>ear-intercommunication.client.war</artifactId>
 	<name>ear-intercommunication.client.war</name>
-
 	<packaging>war</packaging>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<dependencies>
-
 		<dependency>
 			<groupId>org.jboss.spec</groupId>
 			<artifactId>jboss-javaee-6.0</artifactId>
-			<version>1.0.0.Final</version>
 			<type>pom</type>
-			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -34,6 +27,7 @@
 			<scope>provided</scope>
 			<type>ejb</type>
 		</dependency>
+
 		<dependency>
 			<groupId>com.piotrnowicki</groupId>
 			<artifactId>ear-intercommunication.api</artifactId>
@@ -46,11 +40,6 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
@@ -59,5 +48,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

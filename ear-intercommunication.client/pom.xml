@@ -13,16 +13,6 @@
 	<name>ear-intercommunication.client</name>
 	<packaging>pom</packaging>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-			</plugin>
-
-		</plugins>
-	</build>
-
 	<modules>
 		<module>ear-intercommunication.client.ear</module>
 		<module>ear-intercommunication.client.ejb</module>

@@ -8,7 +8,7 @@
         <dependent-module archiveName="ear-intercommunication.client.ejb-1.0-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/ear-intercommunication.client.ejb/ear-intercommunication.client.ejb">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="ear-intercommunication.client.war-1.0-SNAPSHOT.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/piotrnowicki/ear-intercommunication.client.war/1.0-SNAPSHOT/ear-intercommunication.client.war-1.0-SNAPSHOT.war">
+        <dependent-module archiveName="ear-intercommunication.client.war-1.0-SNAPSHOT.war" deploy-path="/" handle="module:/resource/ear-intercommunication.client.war/ear-intercommunication.client.war">
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>

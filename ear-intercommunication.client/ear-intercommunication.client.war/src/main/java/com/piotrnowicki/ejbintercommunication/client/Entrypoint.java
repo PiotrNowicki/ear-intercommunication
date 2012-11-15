@@ -2,7 +2,6 @@ package com.piotrnowicki.ejbintercommunication.client;
 
 
 import javax.ejb.EJB;
-import javax.ejb.Stateless;
 import javax.naming.NamingException;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
