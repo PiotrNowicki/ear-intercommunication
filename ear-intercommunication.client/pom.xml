@@ -8,15 +8,10 @@
 		<artifactId>ear-intercommunication</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
+
 	<artifactId>ear-intercommunication.client</artifactId>
 	<name>ear-intercommunication.client</name>
-
 	<packaging>pom</packaging>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 
 	<build>
 		<plugins>
@@ -29,6 +24,7 @@
 	</build>
 
 	<modules>
-
+		<module>ear-intercommunication.client.ear</module>
+		<module>ear-intercommunication.client.ejb</module>
 	</modules>
 </project>

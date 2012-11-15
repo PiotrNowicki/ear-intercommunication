@@ -8,15 +8,13 @@
 		<artifactId>ear-intercommunication</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
+
 	<artifactId>ear-intercommunication.service</artifactId>
 	<name>ear-intercommunication.service</name>
-
 	<packaging>pom</packaging>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<modules>
+		<module>ear-intercommunication.service.ear</module>
+		<module>ear-intercommunication.service.ejb</module>
 	</modules>
 </project>

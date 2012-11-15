@@ -5,20 +5,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.piotrnowicki</groupId>
-		<artifactId>ear-intercommunication</artifactId>
+		<artifactId>ear-intercommunication.service</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
+	
 	<artifactId>ear-intercommunication.service.ejb</artifactId>
 	<name>ear-intercommunication.service.ejb</name>
-
 	<packaging>ejb</packaging>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<dependencies>
-
 		<dependency>
 			<groupId>org.jboss.spec</groupId>
 			<artifactId>jboss-javaee-6.0</artifactId>
