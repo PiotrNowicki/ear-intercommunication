@@ -26,5 +26,6 @@
 	<modules>
 		<module>ear-intercommunication.client.ear</module>
 		<module>ear-intercommunication.client.ejb</module>
+		<module>ear-intercommunication.client.war</module>
 	</modules>
 </project>
