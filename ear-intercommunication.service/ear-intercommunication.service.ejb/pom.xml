@@ -8,7 +8,7 @@
 		<artifactId>ear-intercommunication.service</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	
+
 	<artifactId>ear-intercommunication.service.ejb</artifactId>
 	<name>ear-intercommunication.service.ejb</name>
 	<packaging>ejb</packaging>

@@ -7,17 +7,16 @@ import javax.ejb.Stateless;
 
 import com.piotrnowicki.earintercommunication.api.MyService;
 
-@Stateless(name="MyServiceBean")
+@Stateless(name = "MyServiceBean")
 @Remote(MyService.class)
 public class MyServiceBean implements MyService {
 
-	private final Logger LOGGER = Logger.getLogger(MyServiceBean.class
-			.getName());
+    private final Logger LOGGER = Logger.getLogger(MyServiceBean.class.getName());
 
-	@Override
-	public String invoke(String data) {
-		LOGGER.info("*************** EJB BEAN METHOD INVOKED");
+    @Override
+    public String invoke(String data) {
+        LOGGER.info("*************** MyServiceBean#invoke(-) method invoked.");
 
-		return "AFTER INVOCATION: " + data;
-	}
+        return "After invocation: " + data;
+    }
 }
