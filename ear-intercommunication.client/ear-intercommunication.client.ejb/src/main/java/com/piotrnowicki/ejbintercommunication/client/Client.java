@@ -17,7 +17,7 @@ public class Client {
 		LOGGER.info("CLIENT INVOKED");
 		
 		Context ctx = new InitialContext();
-		Object bean = ctx.lookup("java:global/ear-intercommunication.service/ear-intercommunication.service.ejb-1.0-SNAPSHOT/MyServiceBean");
+		Object bean = ctx.lookup("java:global/service/service/MyServiceBean!com.piotrnowicki.earintercommunication.api.MyService");
 		
 		MyService service = (MyService)bean;
 		
