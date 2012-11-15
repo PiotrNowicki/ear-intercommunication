@@ -1,4 +1,5 @@
-Communication Between EARs Within One JVM / Application Server
+Communication Between EARs In One JVM / Application Server
+===============================================================
 
 Example of communication between two EAR's that resides on the **same JVM / Application Server**.
 
