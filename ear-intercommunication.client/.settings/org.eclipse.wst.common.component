@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ear-intercommunication.client-1.0-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="ear-intercommunication.api-1.0-SNAPSHOT.jar" deploy-path="/lib" handle="module:/resource/ear-intercommunication.api/ear-intercommunication.api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ear-intercommunication.client.ejb-1.0-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/ear-intercommunication.client.ejb/ear-intercommunication.client.ejb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ear-intercommunication.client.war-1.0-SNAPSHOT.war" deploy-path="/" handle="module:/resource/ear-intercommunication.client.war/ear-intercommunication.client.war">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

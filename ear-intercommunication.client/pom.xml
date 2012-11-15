@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.piotrnowicki</groupId>
+		<artifactId>ear-intercommunication</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>ear-intercommunication.client</artifactId>
+	<name>ear-intercommunication.client</name>
+
+	<packaging>ear</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.piotrnowicki</groupId>
+			<artifactId>ear-intercommunication.client.ejb</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.piotrnowicki</groupId>
+			<artifactId>ear-intercommunication.api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.piotrnowicki</groupId>
+			<artifactId>ear-intercommunication.client.war</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<applicationName>ear-intercommunication-client</applicationName>
+					<finalName>ear-intercommunication-client</finalName>
+					<modules>
+						<jarModule>
+							<groupId>com.piotrnowicki</groupId>
+							<artifactId>ear-intercommunication.api</artifactId>
+							<bundleDir>lib</bundleDir>
+						</jarModule>
+						<ejbModule>
+							<groupId>com.piotrnowicki</groupId>
+							<artifactId>ear-intercommunication.client.ejb</artifactId>
+						</ejbModule>
+						<webModule>
+							<groupId>com.piotrnowicki</groupId>
+							<artifactId>ear-intercommunication.client.war</artifactId>
+							<context-root>ear-intercommunication.client</context-root>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
